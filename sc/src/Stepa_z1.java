@@ -17,7 +17,7 @@ public class Stepa_z1 {
         for (int i=0; i<n; i++)
         {
             for (int j=0; j<n-1; j++) {
-                if (lines[j] < lines[j + 1]) {
+                if (lines[j] > lines[j + 1]) {
                     t = lines[j];
                     lines[j] = lines[j + 1];
                     lines[j + 1] = t;
