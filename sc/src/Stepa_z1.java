@@ -16,15 +16,18 @@ public class Stepa_z1 {
 
         for (int i=0; i<n+1; i++)
         {
-            for (int j=0; j<n; j++) {
-                if (lines[j] > lines[j + 1]) {
+            for (int j=0; j<n; j++)
+            {
+                if (lines[j] > lines[j + 1])
+                {
                     t = lines[j];
                     lines[j] = lines[j + 1];
                     lines[j + 1] = t;
 
                     t_s = lines_s[i];
                     lines_s[j] = lines_s[j + 1];
-                    lines_s[j + 1] = t_s;                }
+                    lines_s[j + 1] = t_s;
+                }
             }
         }
 
