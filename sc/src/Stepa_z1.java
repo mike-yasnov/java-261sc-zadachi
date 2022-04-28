@@ -5,18 +5,18 @@ public class Stepa_z1 {
     {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(), t;
-        int lines[] = new int[n];
-        String lines_s[] = new String[n];
+        int lines[] = new int[n+1];
+        String lines_s[] = new String[n+1];
         String t_s;
-        for (int i=0; i<n; i++)
+        for (int i=0; i<n+1; i++)
         {
             lines_s[i] = sc.nextLine();
             lines[i] = lines_s[i].length();
         }
 
-        for (int i=0; i<n; i++)
+        for (int i=0; i<n+1; i++)
         {
-            for (int j=0; j<n-1; j++) {
+            for (int j=0; j<n; j++) {
                 if (lines[j] > lines[j + 1]) {
                     t = lines[j];
                     lines[j] = lines[j + 1];
@@ -28,7 +28,7 @@ public class Stepa_z1 {
             }
         }
 
-        for (int i=0; i<n; i++)
+        for (int i=0; i<n+1; i++)
         {
             System.out.println(lines_s[i]);
         }
